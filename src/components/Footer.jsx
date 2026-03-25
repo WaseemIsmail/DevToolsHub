@@ -83,6 +83,18 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+
+              <li>
+                <Link to="/about-us" className="hover:text-white">
+                  AboutUs
+                </Link>
+              </li>
+              
+              <li>
+                <Link to="/disclaimer" className="hover:text-white">
+                  Disclaimer
+                </Link>
+              </li>
             </ul>
           </div>
 

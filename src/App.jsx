@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import Disclaimer from "./pages/Disclaimer";
 
 /* Existing Tools */
 import JsonFormatter from "./pages/tools/JsonFormatter";
@@ -50,6 +52,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
 
           {/* Existing Tools */}
           <Route path="/json-formatter" element={<JsonFormatter />} />
