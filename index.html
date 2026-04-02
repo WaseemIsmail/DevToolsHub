@@ -3,35 +3,39 @@
   <head>
     <meta charset="UTF-8" />
 
+    <!-- Google Verification -->
     <meta
       name="google-site-verification"
       content="Tov0yAGszSiqfmTlFnKg_yMBPdfQteNjsFS5Byw3ZWI"
     />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGY1BPG2FL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YGY1BPG2FL');
-    </script>
-
-    <link rel="icon" type="image/png" href="/DevToolsHub.png" />
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Title -->
     <title>DevToolsHub | Free Developer Tools for JSON, Regex, Base64 & More</title>
 
+    <!-- SEO Meta -->
     <meta
       name="description"
-      content="DevToolsHub provides free online developer tools including JSON formatter, Base64 encoder and decoder, UUID generator, regex tester, hash generator, SQL formatter, timestamp converter, and more."
+      content="DevToolsHub offers free online developer tools including JSON formatter, Base64 encoder, UUID generator, regex tester, SQL formatter, timestamp converter, and more."
     />
-
+    <meta
+      name="keywords"
+      content="developer tools, json formatter, base64 encoder, uuid generator, jwt decoder, regex tester, sql formatter, timestamp converter, online tools free"
+    />
     <meta name="author" content="Waseem Ismail" />
     <meta name="application-name" content="DevToolsHub" />
     <meta name="robots" content="index, follow" />
 
+    <!-- Canonical -->
     <link rel="canonical" href="https://devtoolshub-tools.netlify.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/DevToolsHub.png" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0f172a" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="DevToolsHub | Free Developer Tools" />
@@ -59,11 +63,50 @@
       content="https://devtoolshub-tools.netlify.app/DevToolsHub.png"
     />
 
-    <meta name="theme-color" content="#0f172a" />
+    <!-- Structured Data (SEO BOOST 🚀) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DevToolsHub",
+        "url": "https://devtoolshub-tools.netlify.app/",
+        "description": "Free online developer tools including JSON formatter, Base64 encoder, UUID generator, regex tester and more.",
+        "author": {
+          "@type": "Person",
+          "name": "Waseem Ismail"
+        }
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGY1BPG2FL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YGY1BPG2FL');
+    </script>
+
   </head>
 
   <body>
+
+    <!-- Root -->
     <div id="root"></div>
+
+    <!-- SEO fallback (VERY IMPORTANT) -->
+    <noscript>
+      <h1>DevToolsHub - Free Online Developer Tools</h1>
+      <p>
+        DevToolsHub provides free developer tools such as JSON formatter,
+        Base64 encoder, UUID generator, regex tester, SQL formatter,
+        timestamp converter, and more. These tools help developers
+        work faster and more efficiently.
+      </p>
+    </noscript>
+
+    <!-- App -->
     <script type="module" src="/src/main.jsx"></script>
+
   </body>
 </html>
