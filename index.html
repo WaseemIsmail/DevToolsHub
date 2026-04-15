@@ -1,93 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
 
-    <!-- Google Verification -->
-    <meta
-      name="google-site-verification"
-      content="Tov0yAGszSiqfmTlFnKg_yMBPdfQteNjsFS5Byw3ZWI"
-    />
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="Tov0yAGszSiqfmTlFnKg_yMBPdfQteNjsFS5Byw3ZWI" />
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title -->
-    <title>DevToolsHub | Free Developer Tools for JSON, Regex, Base64 & More</title>
+  <!-- Title -->
+  <title>DevToolsHub | Free Developer Tools for JSON, Regex, Base64 & More</title>
 
-    <!-- SEO Meta -->
-    <meta
-      name="description"
-      content="DevToolsHub offers free online developer tools including JSON formatter, Base64 encoder, UUID generator, regex tester, SQL formatter, timestamp converter, and more."
-    />
-    <meta
-      name="keywords"
-      content="developer tools, json formatter, base64 encoder, uuid generator, jwt decoder, regex tester, sql formatter, timestamp converter, online tools free"
-    />
-    <meta name="author" content="Waseem Ismail" />
-    <meta name="application-name" content="DevToolsHub" />
-    <meta name="robots" content="index, follow" />
+  <!-- SEO Meta -->
+  <meta name="description" content="DevToolsHub offers free online developer tools including JSON formatter, Base64 encoder, UUID generator, regex tester, SQL formatter, timestamp converter, and more." />
+  <meta name="keywords" content="developer tools, json formatter, base64 encoder, uuid generator, jwt decoder, regex tester, sql formatter, timestamp converter, online tools free" />
+  <meta name="author" content="Waseem Ismail" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://devtoolshub-tools.netlify.app/" />
+  <!-- IMPORTANT: Prerender Fix -->
+  <meta name="prerender-status-code" content="200" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/DevToolsHub.png" />
+  <!-- Canonical (homepage only, others via Helmet) -->
+  <link rel="canonical" href="https://devtoolshub-tools.netlify.app/" />
 
-    <!-- Theme -->
-    <meta name="theme-color" content="#0f172a" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/DevToolsHub.png" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="DevToolsHub | Free Developer Tools" />
-    <meta
-      property="og:description"
-      content="Free developer tools for JSON formatting, Base64 encoding, UUID generation, regex testing, SQL formatting, and more."
-    />
-    <meta
-      property="og:image"
-      content="https://devtoolshub-tools.netlify.app/DevToolsHub.png"
-    />
-    <meta property="og:url" content="https://devtoolshub-tools.netlify.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="DevToolsHub" />
+  <!-- Theme -->
+  <meta name="theme-color" content="#0f172a" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DevToolsHub | Free Developer Tools" />
-    <meta
-      name="twitter:description"
-      content="Free developer tools for formatting, encoding, generating, converting, and testing data online."
-    />
-    <meta
-      name="twitter:image"
-      content="https://devtoolshub-tools.netlify.app/DevToolsHub.png"
-    />
+  <!-- Open Graph -->
+  <meta property="og:title" content="DevToolsHub | Free Developer Tools" />
+  <meta property="og:description" content="Free developer tools for JSON formatting, Base64 encoding, UUID generation, regex testing, SQL formatting, and more." />
+  <meta property="og:image" content="https://devtoolshub-tools.netlify.app/DevToolsHub.png" />
+  <meta property="og:url" content="https://devtoolshub-tools.netlify.app/" />
+  <meta property="og:type" content="website" />
 
-    <!-- Structured Data (SEO BOOST 🚀) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "DevToolsHub",
-        "url": "https://devtoolshub-tools.netlify.app/",
-        "description": "Free online developer tools including JSON formatter, Base64 encoder, UUID generator, regex tester and more.",
-        "author": {
-          "@type": "Person",
-          "name": "Waseem Ismail"
-        }
-      }
-    </script>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DevToolsHub | Free Developer Tools" />
+  <meta name="twitter:description" content="Free developer tools for formatting, encoding, generating, converting, and testing data online." />
+  <meta name="twitter:image" content="https://devtoolshub-tools.netlify.app/DevToolsHub.png" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGY1BPG2FL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YGY1BPG2FL');
-    </script>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DevToolsHub",
+    "url": "https://devtoolshub-tools.netlify.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://devtoolshub-tools.netlify.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
-  </head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGY1BPG2FL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YGY1BPG2FL');
+  </script>
+
+</head>
 
   <body>
 

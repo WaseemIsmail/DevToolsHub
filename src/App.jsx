@@ -34,35 +34,33 @@ import LoremIpsum from "./pages/tools/LoremIpsum";
 
 function App() {
   return (
-    <BrowserRouter>
-
-      {/* Global Toast UI */}
+    <BrowserRouter basename="/">
+      
+      {/* Toast */}
       <Toaster position="top-center" reverseOrder={false} />
 
       <Navbar />
 
       <main className="min-h-screen">
-
         <Routes>
 
           {/* Home */}
           <Route path="/" element={<Home />} />
 
-          {/* Legal Pages */}
+          {/* Legal */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
 
-          {/* Existing Tools */}
+          {/* Tools */}
           <Route path="/json-formatter" element={<JsonFormatter />} />
           <Route path="/base64-encoder" element={<Base64Tool />} />
           <Route path="/uuid-generator" element={<UuidGenerator />} />
           <Route path="/password-generator" element={<PasswordGenerator />} />
           <Route path="/timestamp-converter" element={<TimestampConverter />} />
 
-          {/* New Tools */}
           <Route path="/jwt-decoder" element={<JWTDecoder />} />
           <Route path="/url-encoder" element={<URLEncoder />} />
           <Route path="/regex-tester" element={<RegexTester />} />
@@ -74,8 +72,10 @@ function App() {
           <Route path="/hash-generator" element={<HashGenerator />} />
           <Route path="/lorem-ipsum" element={<LoremIpsum />} />
 
-        </Routes>
+          {/* 🔥 IMPORTANT: fallback route */}
+          <Route path="*" element={<Home />} />
 
+        </Routes>
       </main>
 
       <Footer />
